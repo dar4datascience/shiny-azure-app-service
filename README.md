@@ -1,5 +1,7 @@
 # Shiny to Azure App Service demo
 
+Redploy
+ 
 [![Azure Container Registry](https://github.com/dar4rackspace/shiny-azure-app-service/actions/workflows/container-registry.yaml/badge.svg)](https://github.com/dar4rackspace/shiny-azure-app-service/actions/workflows/container-registry.yaml)
 
 This repo contains the necessary set up to deploy your Shiny app to [Azure App Service](https://azure.microsoft.com/en-us/products/app-service). You will need the following:
