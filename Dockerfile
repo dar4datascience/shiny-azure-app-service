@@ -1,4 +1,4 @@
-FROM rocker/r-ver:4.2.0
+FROM rocker/r-ver:4.4.0
 
 ENV RENV_VERSION=v1.0.2
 RUN R -e "install.packages('remotes')"
