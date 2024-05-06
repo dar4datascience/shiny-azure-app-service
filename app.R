@@ -5,9 +5,9 @@ words <- c("hangman", "programming", "shiny", "authentication", "azure", "contai
 
 ui <- fluidPage(
   
-  tags$head(
-    tags$script(src = "auth.js")
-  ),
+  # tags$head(
+  #   tags$script(src = "auth.js")
+  # ),
   tags$header(
     style = "background-color: #f2f2f2;
              padding: 10px;
@@ -50,17 +50,17 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   
-  observe({
-    
-    req(input$AzureAuth)
-    
-    if (input$AzureAuth$name == "unknown") {
-      showNotification("Hey there 👋", duration = 5, type = "message")
-    } else {
-      showNotification(paste0("Hey ", input$AzureAuth$name, " 👋"), duration = 5, type = "message")
-    }
-    
-  })
+  # observe({
+  #   
+  #   req(input$AzureAuth)
+  #   
+  #   if (input$AzureAuth$name == "unknown") {
+  #     showNotification("Hey there 👋", duration = 5, type = "message")
+  #   } else {
+  #     showNotification(paste0("Hey ", input$AzureAuth$name, " 👋"), duration = 5, type = "message")
+  #   }
+  #   
+  # })
   
   # Initialize game state
   game_state <- reactiveValues(
